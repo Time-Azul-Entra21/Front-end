@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Javascript avançado</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/assets/css/docs.css">
+</head>
+
+<body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Proway</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
+                class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+
+        <!-- Navbar-->
+
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Menu</div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Inicio
+                        </a>
+
+
+                        <a class="nav-link" href="http://atena.proway.com.br/atena/diario-instrutor/login/"
+                            target="_blank">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Login do professor
+                        </a>
+
+
+
+                        <div class="sb-sidenav-menu-heading">Ambiente</div>
+
+                        <a class="nav-link" href="https://code.visualstudio.com/Download" target="_blank">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Visual Studio Code
+                        </a>
+
+                        <a class="nav-link" href="https://nodejs.org/en/download/" target="_blank">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Node.js
+                        </a>
+
+                          <a class="nav-link" href="https://www.postman.com/downloads/" target="_blank">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            POSTMAN
+                        </a>
+ 
+
+                        <a class="nav-link" href="https://sqlitestudio.pl/" target="_blank">
+                            <div class="sb-nav-link-icon"><svg class="svg-inline--fa fa-chart-area fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-area" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M500 384c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v308h436zM372.7 159.5L288 216l-85.3-113.7c-5.1-6.8-15.5-6.3-19.9 1L96 248v104h384l-89.9-187.8c-3.2-6.5-11.4-8.7-17.4-4.7z"></path></svg><!-- <i class="fas fa-chart-area"></i> Font Awesome fontawesome.com --></div>
+                            Sqlite Studio
+                        </a>
+
+
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Javascript avançado</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item active">Aula 03 - javascript</li>
+                    </ol>
+                    <div class="row">
+
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    Assuntos
+                                </div>
+
+
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Item</th>
+                                                    <th>Assunto</th>
+                                                    <th>Descrição</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Antes de implementar um CRUD</td>
+                                                    <td>
+                                                        Configurar o projeto
+                                                        <ul>
+                                                            <li>No menu superior > Terminal > New terminal ou
+                                                                <code>CTRL + SHIFT + '</code>
+                                                            </li>
+                                                            <li>
+                                                                Abrir um terminal do tipo Command prompt (CMD)
+                                                            </li>
+                                                            <li>Adicionar o CORS no projeto com npm
+                                                                <ul>
+                                                                    <li><code>npm install cors  </code></li>
+                                                                </ul>
+                                                            </li>
+
+                                                            <li>
+                                                                criar um arquivo json de configuração do yarn
+                                                                <ul>
+                                                                    <li><code>yarn init -y</code></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Fazer o yarn entender o express
+                                                                <ul>
+
+                                                                    <li><code>yarn add express</code></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                nosso servidor publicado fica aqui
+                                                                <ul>
+                                                                    <li><code>node index.js</code></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                Para desligar o serviço
+                                                                <ul>
+                                                                    Digite <code>CTRL + C</code> no terminal
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Criar CRUD na API</td>
+                                                    <td>
+                                                        <ol>
+                                                            <li>Escrever codigo inicial
+                                                                <ul>
+                                                                    <li>
+
+                                                                        <pre>
+const express = require('express');
+const cors = require('cors');
+
+const server = express();
+
+server.use(cors());
+server.use(express.json()); // faz com que o express entenda JSON
+
+// Route params = /animais/1
+// Request body = { "tipo": "Gato", "nome": "bixano"}
+
+// CRUD - Create, Read, Update, Delete
+
+const animais = [
+    { tipo: 'gato', nome: "Vézû" },
+    { tipo: 'cachorro', nome: "Tótó" },
+    { tipo: 'coelho', nome: 'Perna longa' },
+    { tipo: 'passarinho', nome: "pica-pau" }
+];
+                                                                        </pre>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                Criar funções utilitarias que serão usadas no CRUD
+                                                                <ul>
+                                                                    <li>
+                                                                        <pre>
+server.use((req, res, next) => { // server.use cria o middleware global
+    console.time('Request'); // marca o início da requisição
+    console.log(`Método: ${req.method}; URL: ${req.url}; `); // retorna qual o método e url foi chamada
+
+    next(); // função que chama as próximas ações 
+
+    console.log('Finalizou'); // será chamado após a requisição ser concluída
+
+    console.timeEnd('Request'); // marca o fim da requisição
+});
+
+function validar(req, res, next) {
+    if (!req.body.tipo) {
+        return res.status(400).json({ error: 'o tipo do animal não foi informado' });
+        // middleware local que irá checar se a propriedade tipo foi infomada, 
+        // caso negativo, irá retornar um erro 400 - BAD REQUEST 
+    }
+    if (!req.body.nome) {
+        return res.status(400).json({ error: 'o nome do animal não foi informado' });
+        // middleware local que irá checar se a propriedade nome foi infomada, 
+        // caso negativo, irá retornar um erro 400 - BAD REQUEST 
+    }
+    return next(); // se o nome for informado corretamente, a função next() chama as próximas ações
+}
+
+function naoExiste(req, res, next) {
+    const animal = animais[req.params.index];
+    if (!animal) {
+        return res.status(404).json({ error: 'animal não encontrado' });
+    } // checa se o animal existe no array, caso negativo informa que o index não existe no array
+
+    req.animal = animal;
+
+    return next();
+}
+                                                                        </pre>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <code>C</code>RUD = Create
+                                                                <ul>
+                                                                    <li>
+                                                                        <pre>
+//================ CRUD
+
+//-----------------CREATE
+server.post('/animais', validar, (req, res) => {
+    // const {  } = req.body; // assim esperamos buscar o name informado dentro do body da requisição  
+    animais.push(req.body);
+    return res.status(201).json({
+        "mensagem": "Item inserido com sucesso" ,
+        "objeto":req.body
+    }); // retorna a informação da variavel animais
+})
+                </pre>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                C<code>R</code>UD = Read
+                                                                <ul>
+                                                                    <li>
+                                                                        Listar todos
+                                                                        <pre>
+//-----------------READ
+
+//Listar todos
+server.get('/animais', (req, res) => {
+    return res.status(200).json(animais);
+}) // rota para listar todos os animais
+</pre>
+                                                                        <hr>
+                                                                        Get item
+                                                                        <pre>
+//Get item
+server.get('/animais/:index', naoExiste, (req, res) => {
+    return res.status(200).json(req.animal);
+})
+</pre>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                CR<code>U</code>D = Update
+                                                                <ul>
+                                                                    <li>
+                                                                        <pre>
+//-----------------UPDATE
+
+server.put('/animais/:index', naoExiste, validar, (req, res) => {
+    const { index } = req.params; // recupera o index com os dados
+    // const { name } = req.body;
+    let antes = animais[index];
+    animais[index] = req.body; // sobrepõe/edita o index obtido na rota de acordo com o novo valor
+    return res.status(200).json({
+        "mensagem": "Item atualizado com sucesso",
+        "antes": antes,
+        "depois": animais[index]
+    });
+}); // retorna novamente os animais atualizados após o update
+</pre>
+
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                CRU<code>D</code> = Delete
+                                                                <ul>
+                                                                    <li>
+                                                                        <pre>
+//-----------------DELETE
+
+server.delete('/animais/:index', naoExiste, (req, res) => {
+    const { index } = req.params; // recupera o index com os dados
+
+    animais.splice(index, 1); // percorre o vetor até o index selecionado e deleta uma posição no array
+
+    return res.status(200).json({
+        "mensagem": "Item deletado com sucesso"
+    });
+}); // retorna os dados após exclusão
+</pre>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Ultima linha é sobre qual porta o servidor será
+                                                                executado
+                                                                <ul>
+                                                                    <li>
+                                                                        server.listen(4000);
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>Testar CRUD no POSTMAN
+                                                                <ol>
+                                                                    <li>
+
+                                                                        <a href="material/CRUD_NODE/API - ANIMAIS.postman_collection.json"
+                                                                            target="_blank">Baixar</a> e adicionar a
+                                                                        collection
+                                                                    </li>
+                                                                    <li>No menu superior > IMPORT > Paste raw text</li>
+                                                                    <li>Colar conteudo do json > Selecionar comando IMPORT</li>
+                                                                    <li>A collection será criada no menu lateral com 5 requisições</li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>Fazer uma página web para consumir a API</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+
+
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+            </main>
+            <footer class="py-4 bg-light mt-auto">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between small">
+                        <div class="text-muted">Copyright &copy; Proway 2021</div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/datatables-demo.js"></script>
+</body>
+
+</html>
