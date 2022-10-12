@@ -9,6 +9,9 @@ export class SistemaService {
   apiUrl: string = 'http://localhost:8080/home';
  
   constructor(private http: HttpClient) {}
+  getTasks() {
+    return this.http.get<any>(this.apiUrl + '/tasks/');
+  }
  
   getMenu() {
     return this.http.get<any>(this.apiUrl + '/menu/');

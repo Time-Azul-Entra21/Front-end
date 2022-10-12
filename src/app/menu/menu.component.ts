@@ -25,7 +25,7 @@ export class MenuComponent implements OnInit {
           return of([
             {
               title: 'Clientes',
-              color: 'text-dark',
+              color: 'text-white',
               icon: 'fas fa-circle',
               sub: [
                 { title: 'Cadastro', 
@@ -42,7 +42,7 @@ export class MenuComponent implements OnInit {
             },
             {
               title: 'Funcionarios',
-              color: 'text-dark',
+              color: 'text-white',
               icon: 'fas fa-circle',
               sub: [
                 { title: 'Cadastro', 
@@ -59,7 +59,7 @@ export class MenuComponent implements OnInit {
             },
             {
               title: 'Equipamentos',
-              color: 'text-dark',
+              color: 'text-white',
               icon: 'fas fa-circle',
               sub: [
                 { title: 'Cadastro', 

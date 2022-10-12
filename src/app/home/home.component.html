@@ -115,24 +115,36 @@
       <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
     </div>
   </div>
-  <!-- ./col -->
-</div>
+  <div class="col">
+    <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">
+            <i class="ion ion-clipboard mr-1"></i>
+            Controle da aula
+          </h3>
+
+           
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body " style="background-color: #166151;" >
+          <ul class="todo-list" data-widget="todo-list">
+            
+            <li *ngFor="let taks of tasks"> 
+              <div  class="icheck-primary d-inline ml-2">
+                <input type="checkbox" value="" name="todo6" id="todoCheck6">
+                <label for="todoCheck6"></label>
+              </div>
+              <span class="text">{{taks.name}}</span>
+              <small class="badge {{taks.color}}" ><i class="far fa-clock"></i> {{taks.desc}}</small>
+              <div class="tools">
+                <i class="fas fa-edit"></i>
+                <i class="fas fa-trash-o"></i>
+              </div>
+            </li>
+          </ul>
+        </div> 
+      
+      </div>
 
 
-
-<div class="card">
-  <img
-    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkFBQoFBQUFBQ8ICQUKFBEWFhQRExMYHCggGBolGxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKABLwMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAABQf/xAAbEAEAAAcAAAAAAAAAAAAAAAAAAgQFBjZ2s//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDLL+zev7VPdYkBfv7N6/tU91iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX7+zev7VPdYkBfv7N6/tU91iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX7+zev7VPdYkBfv7N6/tU91iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX7+zev7VPdYkBfv7N6/tU91iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX7+zev7VPdYkBfv7N6/tU91iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX7+zev7VPdYkBfv7N6/tU91iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX7+zev7VPdYkBfv7N6/tU91iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX7+zev7VPdYkBfv7N6/tU91iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX7+zev7VPdYkBfv7N6/tU91iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX7+zev7VPdYkBfv7N6/tU91iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9k="
-    width="50" height="50" class="card-img-top" alt="...">
-
-  <div class="card-body">
-    <h5 class="card-title">Planinha de Treinos </h5>
-    <p class="card-text">Planinha de treinos para os funcionarios repassarem aos alunos</p>
-    <a href="#" class="btn btn-primary">Click aqui!</a>
-  </div>
-  
-
-
-
-</div>
 
