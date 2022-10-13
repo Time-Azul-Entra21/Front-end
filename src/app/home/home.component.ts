@@ -26,11 +26,11 @@ export class HomeComponent implements OnInit {
     .pipe(
       catchError((error)=>{
         return of ([
-          {name:"Material didático pessoal no site oliota.com",desc:"Geralmente 1 dia antes",color:"badge-success"},
-          {name:"Cerimonia ágil",desc:"Planejamento,Diaria ou Retrospectiva",color:"badge-primary"}, 
-          {name:"Intervalo",desc:"Merendar",color:"badge-warning"}, 
-          {name:"Exercicio",desc:"Importante práticar",color:"badge-danger"}, 
-          {name:"Avaliação",desc:"Ninguem deixa em branco",color:"badge-secondary"}, 
+          {name:"---",desc:"----",color:"badge-success"},
+          {name:"------",desc:"--------",color:"badge-primary"}, 
+          {name:"------",desc:"Merendar",color:"badge-warning"}, 
+          {name:"-------",desc:"-------",color:"badge-danger"}, 
+          {name:"--------",desc:"------",color:"badge-secondary"}, 
         ])
       })
     ).subscribe((response:any)=>{

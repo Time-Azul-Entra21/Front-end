@@ -26,7 +26,7 @@ export class MenuComponent implements OnInit {
             {
               title: 'Clientes',
               color: 'text-white',
-              icon: 'fas fa-circle',
+              icon: 'fa-solid fa-user text-white',
               sub: [
                 { title: 'Cadastro', 
                 icon: 'fas fa-table',
@@ -43,7 +43,7 @@ export class MenuComponent implements OnInit {
             {
               title: 'Funcionarios',
               color: 'text-white',
-              icon: 'fas fa-circle',
+              icon: 'nav-icon far fa-circle text-white',
               sub: [
                 { title: 'Cadastro', 
                 icon: 'fas fa-table',
@@ -60,7 +60,7 @@ export class MenuComponent implements OnInit {
             {
               title: 'Equipamentos',
               color: 'text-white',
-              icon: 'fas fa-circle',
+              icon: 'nav-icon far fa-circle text-white',
               sub: [
                 { title: 'Cadastro', 
                 icon: 'fas fa-table',
