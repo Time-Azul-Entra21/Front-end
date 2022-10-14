@@ -12,7 +12,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreatorsComponent } from './creators/creators.component';
 import { TimeComponent } from './time/time.component';
 import { UsersComponent } from './users/users.component';
-import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component'
+import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
+import { CommonModule } from '@angular/common';
+
+
+
+
 
 
 @NgModule({
@@ -28,6 +33,7 @@ import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.co
     CadastroClienteComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule, 

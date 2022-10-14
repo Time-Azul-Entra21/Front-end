@@ -11,13 +11,13 @@ import { UsersComponent } from './users/users.component';
 import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
 
 const routes: Routes = [
-  {path:"",component:LoginComponent},
-  {path:"home",component:HomeComponent,canActivate:[SegurancaService]}, 
-  {path:"cadastro-cliente",component:CadastroClienteComponent,canActivate:[SegurancaService]},
-  {path:"cadastro-equipamento",component:CadastroEquipamentoComponent,canActivate:[SegurancaService]},
-  {path:"cadastro-funcionario",component:CadastroFuncionarioComponent,canActivate:[SegurancaService]},
-  {path:"time", component:TimeComponent},
-  {path:"users", component:UsersComponent}
+  { path: "", component: LoginComponent },
+  { path: "home", component: HomeComponent, canActivate: [SegurancaService] },
+  { path: "cadastro-cliente", component: CadastroClienteComponent, canActivate: [SegurancaService] },
+  { path: "cadastro-equipamento", component: CadastroEquipamentoComponent, canActivate: [SegurancaService] },
+  { path: "cadastro-funcionario", component: CadastroFuncionarioComponent, canActivate: [SegurancaService] },
+  { path: "time", component: TimeComponent },
+  { path: "users", component: UsersComponent }
 
 ];
 @NgModule({
