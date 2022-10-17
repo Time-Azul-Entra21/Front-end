@@ -31,12 +31,7 @@ export class MenuComponent implements OnInit {
                 { title: 'Cadastro', 
                 icon: 'fas fa-table',
                 route: 'cadastro-cliente'  },
-                {
-                  title: 'Lista', 
-                icon: 'fas fa-table',
-                route: ''
-
-                }
+               
                 
               ],
             },
@@ -48,12 +43,7 @@ export class MenuComponent implements OnInit {
                 { title: 'Cadastro', 
                 icon: 'fas fa-table',
                 route: 'cadastro-funcionario'  },
-                {
-                  title: 'Lista', 
-                icon: 'fas fa-table',
-                route: ''
-
-                }
+                
               
               ],
             },
@@ -65,12 +55,6 @@ export class MenuComponent implements OnInit {
                 { title: 'Cadastro', 
                 icon: 'fas fa-table',
                 route: 'cadastro-equipamento'  },
-                {
-                  title: 'Lista', 
-                icon: 'fas fa-table',
-                route: ''
-
-                }
               
               ],
             },
