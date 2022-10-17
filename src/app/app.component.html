@@ -1,0 +1,29 @@
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+
+    <app-header [hidden]="!seguranca.logged"></app-header>
+
+    <app-menu [hidden]="!seguranca.logged"></app-menu>
+
+    <div class="content-wrapper" style="min-height: 1301.27px;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card mt-5 p-4">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer class="main-footer">
+      <div class="float-right d-none d-sm-block"><b>Version</b> 1.0.0</div>
+      <strong>Copyright &copy; 2022
+        <a href="https://oliota.com">Aulas Angular</a>.</strong>
+      
+    </footer> -->
+
+    <aside class="control-sidebar control-sidebar-dark"></aside>
+  </div>
+</body>
