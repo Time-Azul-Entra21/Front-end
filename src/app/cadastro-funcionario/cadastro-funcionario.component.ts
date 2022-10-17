@@ -10,9 +10,9 @@ import { catchError, of } from 'rxjs';
 
 export class CadastroFuncionarioComponent implements OnInit {
   funcionarios!: Array<any>
-  funcionario: any = {};
+  funcionario!: any;
   cadastrando!: boolean;
-  
+
   id!: number
   cpf!: string
   nome!: string
@@ -34,9 +34,9 @@ export class CadastroFuncionarioComponent implements OnInit {
       .pipe(
         catchError((error) => {
           let funcionarios: Array<any> = new Array();
-          funcionarios.push({ id: 1, cpf: '123-456-78', nome: 'Gabriel', idade: 19, endereco: 'Gaspar', telefone: '(11) 4002 -8922.', turno: 'diurno', funcao: 'personal', salario: '4000'});
-        
-       
+          funcionarios.push({ id: 1, cpf: '123-456-78', nome: 'Gabriel', idade: 19, endereco: 'Gaspar', telefone: '(11) 4002 -8922.', turno: 'diurno', funcao: 'personal', salario: '4000' });
+
+
           return of(funcionarios);
         })
       )

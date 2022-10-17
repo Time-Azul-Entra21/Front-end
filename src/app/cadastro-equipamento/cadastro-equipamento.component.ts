@@ -31,7 +31,7 @@ export class CadastroEquipamentoComponent implements OnInit {
           equipamentos.push({ id: 1, nome: 'flexora', quantidade: 2});
           equipamentos.push({ id: 2, nome: 'abdutora', quantidade: 2});
           equipamentos.push({ id: 3, nome: 'legpress', quantidade: 2});
-          equipamentos.push({ id: 4, nome: 'pix', quantidade: 2});
+          equipamentos.push({ id: 4, nome: 'Halteres ', quantidade: 25});
          
           return of(equipamentos);
         })
@@ -107,9 +107,9 @@ export class CadastroEquipamentoComponent implements OnInit {
       });
   }
 
-  delete(cliente: any): void {
+  delete(equipamento: any): void {
     this.EquipamentoService
-      .delete(cliente)
+      .delete(equipamento.id)
       .pipe(
         catchError((error) => {
           return of(false);

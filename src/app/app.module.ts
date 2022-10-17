@@ -14,6 +14,8 @@ import { TimeComponent } from './time/time.component';
 import { UsersComponent } from './users/users.component';
 import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
 import { CommonModule } from '@angular/common';
+import { CadastroFuncionarioComponent } from './cadastro-funcionario/cadastro-funcionario.component';
+import { CadastroEquipamentoComponent } from './cadastro-equipamento/cadastro-equipamento.component';
 
 
 
@@ -31,6 +33,8 @@ import { CommonModule } from '@angular/common';
     TimeComponent,
     UsersComponent,
     CadastroClienteComponent,
+    CadastroFuncionarioComponent,
+    CadastroEquipamentoComponent
   ],
   imports: [
     CommonModule,
