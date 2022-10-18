@@ -7,7 +7,7 @@ import { SegurancaService } from './services/seguranca.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projeto_modelo_entra21_2022';
+  title = '';
 
   constructor(
     public seguranca:SegurancaService

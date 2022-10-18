@@ -43,10 +43,10 @@
               <td>{{ cliente.cpf }}</td>
               <td>{{ cliente.nome }}</td>
               <td>{{ cliente.idade }}</td>
-              <td>{{ cliente.endereco }}</td>
               <td>{{ cliente.telefone }}</td>
+              <td>{{ cliente.endereco }}</td>
               <td>{{ cliente.tipo_plano }}</td>
-              <td>{{ cliente.tipo_cartao }}</td>
+              <td>{{ cliente.numero_cartao }}</td>
             </tr>
           </tbody>
         </table>
@@ -93,7 +93,7 @@
                       </div>
                       <div class="col-2">
                         <label for="cartao">Cartão:</label>
-                        <input type="text" class="form-control" [(ngModel)]="cliente.tipo_cartao"
+                        <input type="text" class="form-control" [(ngModel)]="cliente.numero_cartao"
                           placeholder="cartao" />
                       </div>
                     </div>

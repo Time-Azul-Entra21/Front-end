@@ -20,7 +20,7 @@ export class CadastroClienteComponent implements OnInit {
   endereco!: string
   telefone!: string
   tipo_plano!: string
-  tipo_cartao!: string
+  numero_cartao!: string
   //
   constructor(private clienteService: ClienteService) { }
 
@@ -33,10 +33,10 @@ export class CadastroClienteComponent implements OnInit {
       .pipe(
         catchError((error) => {
           let clientes: Array<any> = new Array();
-          clientes.push({ id: 1, cpf: '123-456-78', nome: 'Gabriel', idade: 19, endereco: 'Gaspar', telefone: '(11) 4002 -8922.', tipo_plano: 'Anual', tipo_cartao: '1234-5698'});
-          clientes.push({ id: 2, cpf: '123-456-78', nome: 'Geiso', idade: 20, endereco: 'Brusque', telefone: '(11) 4002 -8922.', tipo_plano: 'Mensal', tipo_cartao: '1234-5698'});
-          clientes.push({ id: 3, cpf: '123-456-78', nome: 'Geovani', idade: 19, endereco: 'Içara', telefone: '(11) 4002 -8922.', tipo_plano: 'Semanal', tipo_cartao: '1234-5698'});
-          clientes.push({ id: 4, cpf: '123-456-78', nome: 'Henrique', idade: 19, endereco: 'Blumenau', telefone: '(11) 4002 -8922.', tipo_plano: 'Anual', tipo_cartao: '1234-5698'});
+          clientes.push({ id: 1, cpf: '123-456-78', nome: 'Gabriel', idade: 19, endereco: 'Gaspar', telefone: '(11) 4002 -8922.', tipo_plano: 'Anual', numero_cartao: '1234-5698'});
+          clientes.push({ id: 2, cpf: '123-456-78', nome: 'Geiso', idade: 20, endereco: 'Brusque', telefone: '(11) 4002 -8922.', tipo_plano: 'Mensal', numero_cartao: '1234-5698'});
+          clientes.push({ id: 3, cpf: '123-456-78', nome: 'Geovani', idade: 19, endereco: 'Içara', telefone: '(11) 4002 -8922.', tipo_plano: 'Semanal', numero_cartao: '1234-5698'});
+          clientes.push({ id: 4, cpf: '123-456-78', nome: 'Henrique', idade: 19, endereco: 'Blumenau', telefone: '(11) 4002 -8922.', tipo_plano: 'Anual', numero_cartao: '1234-5698'});
          
           return of(clientes);
         })
