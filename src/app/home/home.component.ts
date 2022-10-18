@@ -26,11 +26,11 @@ export class HomeComponent implements OnInit {
     .pipe(
       catchError((error)=>{
         return of ([
-          {name:"---",desc:"----",color:"badge-success"},
-          {name:"------",desc:"--------",color:"badge-primary"}, 
-          {name:"------",desc:"Merendar",color:"badge-warning"}, 
-          {name:"-------",desc:"-------",color:"badge-danger"}, 
-          {name:"--------",desc:"------",color:"badge-secondary"}, 
+          {name:"Musculação",desc:"seg a sexta",color:"badge-success"},
+          {name:"Aulas de Dança",desc:"terça e quinta",color:"badge-primary"}, 
+          {name:"Corrida",desc:"aos sabádos",color:"badge-warning"}, 
+          {name:"Muay Thai",desc:"seg a sexta",color:"badge-danger"}, 
+          {name:"Natação",desc:"seg a sexta",color:"badge-secondary"}, 
         ])
       })
     ).subscribe((response:any)=>{
